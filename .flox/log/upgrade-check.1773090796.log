@@ -1,0 +1,14 @@
+2026-03-09T21:13:16.558447Z DEBUG flox: FLOX_VERSION=1.9.1-g299f53d
+2026-03-09T21:13:16.559103Z DEBUG flox::config: Global config directory overridden path="/home/rowan/.config/flox"
+2026-03-09T21:13:16.559385Z DEBUG flox_core::sentry: No Sentry DSN set, skipping Sentry initialization
+2026-03-09T21:13:16.559396Z DEBUG flox: set _FLOX_SUBSYSTEM_VERBOSITY=2
+2026-03-09T21:13:16.562378Z DEBUG flox::config: Global config directory overridden path="/home/rowan/.config/flox"
+2026-03-09T21:13:16.563018Z DEBUG flox::commands: Metrics collection enabled
+2026-03-09T21:13:16.563046Z DEBUG flox::utils::update_notifications: Skipping update check in development mode
+2026-03-09T21:13:16.563116Z DEBUG flox::utils::init::catalog_client: using catalog client with url: https://api.flox.dev
+2026-03-09T21:13:16.591721Z DEBUG flox::commands: feature flags configured=Features { upload: false, qa: false, outputs: false }
+2026-03-09T21:13:16.592227Z DEBUG check-upgrade: flox::utils::metrics: pushing entry to metrics buffer: MetricEntry { subcommand: Some("check-upgrade"), extras: {}, timestamp: 2026-03-09 21:13:16.592038628 +00:00:00, uuid: 4d93e848-8353-49cc-a8ed-5077d3cda053, flox_version: "1.9.1-g299f53d", os_family: Some("Linux"), os_family_release: Some("6.19.6"), os: Some("nixos"), os_version: Some("26.05"), empty_flags: [], invocation_sources: [] }
+2026-03-09T21:13:16.620778Z DEBUG check-upgrade: flox_rust_sdk::models::environment: detected concrete environment type: path
+2026-03-09T21:13:16.622639Z DEBUG check-upgrade: flox_rust_sdk::providers::upgrade_checks: created unlocked upgrade information guard upgrade_information_path="/home/rowan/dev/neurounify/.flox/cache/upgrade-checks.json"
+2026-03-09T21:13:16.623348Z DEBUG check-upgrade: flox::commands::check_for_upgrades: Recently checked for upgrades. Skipping.
+2026-03-09T21:13:16.625224Z DEBUG flox::commands: removing process tempdir temp_dir="/home/rowan/.local/cache/flox/process/.tmpXZMb5q"

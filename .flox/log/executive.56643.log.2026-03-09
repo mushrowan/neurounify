@@ -1,0 +1,10 @@
+2026-03-09T20:59:25.148898Z  INFO flox_activations::cli::executive: ExecutiveArgs { dot_flox_path: "/home/rowan/dev/neurounify/.flox", executive_ctx: "/run/user/1000/activations/6f784a80-neurounify/ihjzfh22gky72xnwh2jz8yf8v3prdg1q-environment-develop.1773089965144/executive_ctx_znRIBX" }
+2026-03-09T20:59:25.149444Z  INFO flox_activations::cli::executive: sending SIGUSR1 to parent 56624
+2026-03-09T20:59:25.149560Z  INFO flox_activations::cli::executive: starting monitoring loop
+2026-03-09T20:59:25.149694Z  INFO flox_activations::cli::executive::log_gc: still watching, woof woof
+2026-03-09T20:59:25.188121Z  INFO monitoring: flox_core::activations: detaching terminated PID pid=56624 start_id=StartIdentifier { store_path: "/nix/store/ihjzfh22gky72xnwh2jz8yf8v3prdg1q-environment-develop", timestamp: UnixTimestampMillis(1773089965144) }
+2026-03-09T20:59:25.188168Z  INFO monitoring: flox_activations::cli::executive: running cleanup after all PIDs terminated
+2026-03-09T20:59:25.188178Z  INFO monitoring: flox_activations::cli::executive: running cleanup
+2026-03-09T20:59:25.188193Z  INFO monitoring: flox_activations::cli::executive: did not shut down process-compose reason="no socket"
+2026-03-09T20:59:25.188388Z  INFO monitoring: flox_activations::cli::executive: finished cleanup
+2026-03-09T20:59:25.188456Z  INFO flox_activations::cli::executive: executive exiting: Ok(())

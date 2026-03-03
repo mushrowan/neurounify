@@ -1,0 +1,828 @@
+2026-03-09T21:40:17.125075Z DEBUG flox: FLOX_VERSION=1.9.1-g299f53d
+2026-03-09T21:40:17.130377Z DEBUG flox::config: Global config directory overridden path="/home/rowan/.config/flox"
+2026-03-09T21:40:17.130739Z DEBUG flox_core::sentry: No Sentry DSN set, skipping Sentry initialization
+2026-03-09T21:40:17.130750Z DEBUG flox: set _FLOX_SUBSYSTEM_VERBOSITY=2
+2026-03-09T21:40:17.133160Z DEBUG flox::config: Global config directory overridden path="/home/rowan/.config/flox"
+2026-03-09T21:40:17.133526Z DEBUG flox::commands: Metrics collection enabled
+2026-03-09T21:40:17.133541Z DEBUG flox::utils::update_notifications: Skipping update check in development mode
+2026-03-09T21:40:17.133582Z DEBUG flox::utils::init::catalog_client: using catalog client with url: https://api.flox.dev
+2026-03-09T21:40:17.149690Z DEBUG flox::commands: feature flags configured=Features { upload: false, qa: false, outputs: false }
+2026-03-09T21:40:17.200338Z DEBUG check-upgrade: flox::utils::metrics: pushing entry to metrics buffer: MetricEntry { subcommand: Some("check-upgrade"), extras: {}, timestamp: 2026-03-09 21:40:17.20017128 +00:00:00, uuid: 4d93e848-8353-49cc-a8ed-5077d3cda053, flox_version: "1.9.1-g299f53d", os_family: Some("Linux"), os_family_release: Some("6.19.6"), os: Some("nixos"), os_version: Some("26.05"), empty_flags: [], invocation_sources: [] }
+2026-03-09T21:40:17.221470Z DEBUG check-upgrade: flox_rust_sdk::models::environment: detected concrete environment type: path
+2026-03-09T21:40:17.226811Z DEBUG check-upgrade: flox_rust_sdk::providers::upgrade_checks: created unlocked upgrade information guard upgrade_information_path="/home/rowan/dev/neurounify/.flox/cache/upgrade-checks.json"
+2026-03-09T21:40:17.228504Z DEBUG check-upgrade: flox::commands::check_for_upgrades: Recently checked for upgrades. Skipping.
+2026-03-09T21:40:17.232619Z DEBUG flox::commands: removing process tempdir temp_dir="/home/rowan/.local/cache/flox/process/.tmpGVO8Wp"
+2026-03-09T21:40:17.233916Z DEBUG flox::utils::metrics: Sending metrics to https://z7qixlmjr3.execute-api.eu-north-1.amazonaws.com/prod/capture
+2026-03-09T21:40:17.233924Z DEBUG flox::utils::metrics: Metrics: [
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "mode": "dev",
+        "path_environment": "neurounify",
+        "start_services": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:13:16.546892101Z",
+    "uuid": "5a289852-b306-4978-904a-b90cb371d336"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "has_includes": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:13:16.551629260Z",
+    "uuid": "1856530f-7c25-4cc2-8a92-38def773a98b"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:13:16.553329440Z",
+    "uuid": "138c2c80-80f6-4049-a137-6be7bd1848f6"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:13:16.553577725Z",
+    "uuid": "77b84a5a-50d7-426d-966f-a880cb5015df"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "shell": "bash"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:13:16.553779392Z",
+    "uuid": "ff48335b-4344-4add-a18c-30814c901067"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://check-upgrade",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "check-upgrade",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {},
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "check-upgrade"
+    },
+    "timestamp": "2026-03-09T21:13:16.592038628Z",
+    "uuid": "842ec12b-8898-44d2-9197-85693f3d3c4a"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "mode": "dev",
+        "path_environment": "neurounify",
+        "start_services": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:15:09.645407191Z",
+    "uuid": "5619b352-705e-446b-8986-df97f8e44314"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "has_includes": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:15:09.648743190Z",
+    "uuid": "cf259732-4325-4931-a2a5-9b745a64ba1b"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:15:09.649527847Z",
+    "uuid": "41d9f0a9-701a-44db-9222-a00e42b9a3ba"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:15:09.649658592Z",
+    "uuid": "a3c3a9ab-4c8c-465d-9445-d791188f223e"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "shell": "bash"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:15:09.649769269Z",
+    "uuid": "8d6ac4d7-720a-41ae-86e6-29a9fe81802c"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://check-upgrade",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "check-upgrade",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {},
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "check-upgrade"
+    },
+    "timestamp": "2026-03-09T21:15:09.672149231Z",
+    "uuid": "d2a8eafc-f445-477e-a4ab-8b5f70626cbf"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "mode": "dev",
+        "path_environment": "neurounify",
+        "start_services": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:40:17.107118032Z",
+    "uuid": "eb9861fa-f7ad-4bd9-9265-61b5c2faa26e"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "has_includes": "false"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:40:17.134953792Z",
+    "uuid": "aef46daa-5c26-4465-a78a-4e57710282d0"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:40:17.139722062Z",
+    "uuid": "d8336c42-f0b4-459e-96a9-61e4337e8f67"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate#version",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate#version",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "lockfile_version": "1"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate#version"
+    },
+    "timestamp": "2026-03-09T21:40:17.140031925Z",
+    "uuid": "d16ccff6-23ea-4f95-99e4-ba4b2c0ef578"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://activate",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "activate",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {
+        "shell": "bash"
+      },
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "activate"
+    },
+    "timestamp": "2026-03-09T21:40:17.140147582Z",
+    "uuid": "17a25214-b141-4530-b4f1-3cd0130d0aca"
+  },
+  {
+    "event": "cli-invocation",
+    "properties": {
+      "$current_url": "flox://check-upgrade",
+      "$device_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "$lib": "flox-cli",
+      "$os": "Linux",
+      "$pathname": "check-upgrade",
+      "$set": {
+        "$os": "Linux",
+        "flox_cli_uuid": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+        "flox_version": "1.9.1-g299f53d",
+        "kernel_version": "6.19.6",
+        "os": "nixos",
+        "os_family": "Linux",
+        "os_family_release": "6.19.6",
+        "os_version": "26.05",
+        "test": true,
+        "used_rust_preview": true
+      },
+      "$set_once": {
+        "$initial_os": "Linux",
+        "initial_flox_version": "1.9.1-g299f53d",
+        "initial_kernel_version": "6.19.6",
+        "initial_os": "nixos",
+        "initial_os_family": "Linux",
+        "initial_os_family_release": "6.19.6",
+        "initial_os_version": "26.05"
+      },
+      "distinct_id": "4d93e848-8353-49cc-a8ed-5077d3cda053",
+      "empty_flags": [],
+      "extras": {},
+      "invocation_sources": [],
+      "kernel_version": "6.19.6",
+      "os": "nixos",
+      "os_family": "Linux",
+      "os_family_release": "6.19.6",
+      "os_version": "26.05",
+      "subcommand": "check-upgrade"
+    },
+    "timestamp": "2026-03-09T21:40:17.200171280Z",
+    "uuid": "b49014ad-ce9b-4f7b-9c9a-5e8664b9cbcd"
+  }
+]
+2026-03-09T21:40:17.571290Z DEBUG flox::utils::metrics: Metrics sent result=Response { url: "https://z7qixlmjr3.execute-api.eu-north-1.amazonaws.com/prod/capture", status: 200, headers: {"date": "Mon, 09 Mar 2026 21:40:17 GMT", "content-type": "application/json", "content-length": "0", "connection": "keep-alive", "x-amzn-requestid": "8ff989d9-c7b8-4982-8150-e917c9ead847", "x-amz-apigw-id": "Z-aqTEJygi0Ed_Q=", "x-amzn-trace-id": "Root=1-69af3e41-131c37c1160a0ddd36c2ac43;Parent=3ebb0526e077d1ca;Sampled=0"} }
