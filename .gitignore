@@ -2,3 +2,7 @@ target/
 result
 result-*
 .direnv/
+testdata/*.edf
+testdata/*.bdf
+testdata/*.zip
+testdata/*.txt
